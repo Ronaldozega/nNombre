@@ -2,7 +2,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace MayoroMenor
 {
-    public class Mayor
+    public class Enteros
     {
         public  void MostraMaxMinArrayEnteros()
         {
@@ -37,8 +37,59 @@ namespace MayoroMenor
                 {
                     suma +=valores[i];
                 }
-                Console.WriteLine("LA SUMA ES " + suma);
+                Console.WriteLine("LA SUMA ES : " + suma);
             }
-            
+
+        public void PromedioArrayEnteros() 
+            {
+	            double[] calificaciones = {15,33,28,14};
+	            double promedio = calificaciones.Average();
+	            Console.WriteLine("PROMEDIO : " + promedio);
+            }
+        public void FrecuenciaArrayEnteros()
+    {
+        
+        int[] miArray = { 1, 2, 3, 4, 2, 5, 2, 6 };
+
+        
+        int elementoABuscar = 2;
+
+        
+        int frecuencia = ObtenerFrecuencia(miArray, elementoABuscar);
+
+
+        Console.WriteLine($"La frecuencia de {elementoABuscar} es: {frecuencia}");
+    }
+
+    static int ObtenerFrecuencia(int[] array, int elemento)
+    {
+    
+        int frecuencia = array.Count(e => e == elemento);
+        return frecuencia;
+    }
+
+
+
+    public void  ComplementoArrayCadenasAyB()
+    {      
+        string[] arrayA = { "a", "b", "c", "d", "e" };
+        string[] arrayB = { "c", "d", "e", "f", "g" };
+
+        string[] complemento = ObtenerComplemento(arrayA, arrayB);
+
+
+        static string[] ObtenerComplemento(string[] arrayA, string[] arrayB)
+    {
+        string[] complemento = arrayA.Except(arrayB).ToArray();
+        return complemento;
+    }
+        Console.WriteLine("Complemento de A y B:");
+        foreach (var elemento in complemento)
+        {
+            Console.Write(elemento + "  ,  ");
         }
     }
+}
+
+    }             
+

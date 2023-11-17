@@ -7,11 +7,20 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
-            Mayor MinumeroMayor = new Mayor();
+            Enteros MinumeroMayor = new Enteros();
             MinumeroMayor.MostraMaxMinArrayEnteros();
             Console.WriteLine("----------------------------");
             MinumeroMayor.SumaArrayEnteros();
+            Console.WriteLine("----------------------------");
+            MinumeroMayor.PromedioArrayEnteros();
+            Console.WriteLine("----------------------------");
+            MinumeroMayor.FrecuenciaArrayEnteros();
+            Console.WriteLine("----------------------------");
+            MinumeroMayor.ComplementoArrayCadenasAyB();
             Console.ReadLine();
+
+            
         }
+        
     }
 } 
