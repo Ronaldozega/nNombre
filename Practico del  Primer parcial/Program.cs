@@ -10,8 +10,8 @@ namespace HelloWorld
             Mayor MinumeroMayor = new Mayor();
             MinumeroMayor.MostraMaxMinArrayEnteros();
             Console.WriteLine("----------------------------");
+            MinumeroMayor.SumaArrayEnteros();
             Console.ReadLine();
-            
         }
     }
 } 

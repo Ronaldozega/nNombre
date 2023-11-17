@@ -26,6 +26,19 @@ namespace MayoroMenor
             Console.WriteLine("EL VALOR MINIMO ES : " + minimo );
             Console.WriteLine("EL VALOR MAXIMO ES : " + maximo );
         }
-    }
 
-} 
+        public void SumaArrayEnteros()
+            {
+                int[] valores = {1,2,3,4,5,6,7,8,9,10};
+
+                int suma = 0 ;
+
+                for (int i = 0; i < valores.Length; i++)
+                {
+                    suma +=valores[i];
+                }
+                Console.WriteLine("LA SUMA ES " + suma);
+            }
+            
+        }
+    }
