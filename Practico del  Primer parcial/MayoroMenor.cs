@@ -6,16 +6,26 @@ namespace MayoroMenor
     {
         public  void MostraMaxMinArrayEnteros()
         {
-            int[] datos = {5,10,15,20,25,100,27,18,9,3};
+            int[] valores = {5,10,15,20,25,100,27,18,9,3};
             
-            int max = datos[0];
-            for (int i = 0; i < datos.Length; i++)
+            int maximo = valores[0];
+            int minimo = valores[0];
+
+            for (int i = 1; i < valores.Length; i++)
             {
-                if (datos[i] > max)
-                    max = datos [i];
+                if(valores[i] > maximo)
+                {
+                    maximo = valores[i];
+                }
+
+                if(valores[i] < minimo)
+                {
+                    minimo = valores[i];
+                }
             }
-            Console.WriteLine(max);
+            Console.WriteLine("EL VALOR MINIMO ES : " + minimo );
+            Console.WriteLine("EL VALOR MAXIMO ES : " + maximo );
         }
     }
-    
+
 } 

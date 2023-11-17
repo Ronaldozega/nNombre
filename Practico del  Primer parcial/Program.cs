@@ -9,7 +9,7 @@ namespace HelloWorld
 
             Mayor MinumeroMayor = new Mayor();
             MinumeroMayor.MostraMaxMinArrayEnteros();
-            Console.WriteLine("ES MI NUMERO MAXINO");
+            Console.WriteLine("----------------------------");
             Console.ReadLine();
             
         }
